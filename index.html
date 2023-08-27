@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temprature converter</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="form">
+        <h1>Celsius to Fahrenheit</h1>
+        <input id="input_field" placeholder="enter your celsius temperatute ">
+        <button onclick="calculate()">calculator</button>
+        <p id="result"></p>
+    </div>
+    <script>
+      function calculate(){
+    const field= document.getElementById("input_field");
+    const celsiustem=input_field.value;
+    const Fahrenheitem = (celsiustem * 9/5) + 32;
+    const displayresult = document.getElementById("result");
+    displayresult.innerHTML= `your temperature is ${Fahrenheitem}`
+      }
+    </script>
+</body>
+</html>
